@@ -1,0 +1,36 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+
+<ion-item>
+  <ion-label floating>Username</ion-label>
+  <ion-input type="text" #username></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label floating>Password</ion-label>
+  <ion-input type="password" #password></ion-input>
+</ion-item>
+
+<button ion-button full round (click)="addCadastrado()">Cadastrar</button>
+</ion-list>
+
+<ion-fab  right bottom>
+  <button ion-fab mini ><ion-icon name="add"></ion-icon>
+  </button>
+  <ion-fab-list side="left">
+    <button ion-button  color="primary" (click)="goHome()">Home</button>
+    <button ion-button   color="secondary" (click)="goAtualiza()">Atualizar</button>
+  </ion-fab-list>
+
+</ion-fab>
+
+</ion-content>
